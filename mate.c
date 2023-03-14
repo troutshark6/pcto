@@ -1,18 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int anno;
-    printf("Inserisci un anno\n");
-    scanf("%d", &anno);
-    if (anno % 400 == 0)
+    int a;
+    int b;
+    int c;
+    printf("Inserisci tre numeri\n");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    if (a + b > c && a + c > b && b + c > a )
     {
-        printf("L'anno è bisestile\n");
+        printf("I numeri possono essere i lati di un triangolo\n");
     }
-    else if (anno % 4 == 0 && anno % 100 != 0)
-    printf("L'anno è bisestil\n");
-    else 
-    {
-        printf("L'anno non è bisestile\n");
-    }
-
+        else 
+        {
+             printf("I numeri non possono essere i lati di un triangolo\n");
+        }
 }
+
+
